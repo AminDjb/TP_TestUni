@@ -59,13 +59,13 @@ describe('isPrime', function () {
 
 describe('sumPrime', function () {
 
-    test('Test sumPrime < 2 => throw exception', () => {
+    test('Test sumPrime <= 1 => throw exception', () => {
         expect(() => { Util.sumPrime(1) }).toThrow('Unable to compute sumPrime for n < 2')
     });
 
     test.each([
-        [2, 2],
         [6, 10],
+        [7, 17],
         [8, 17],
     ])(
         'sumPrime %i equals to %i',
@@ -89,13 +89,13 @@ describe('cipher', function () {
 
     
     test('Test cipher de abc => bcd', () => {
-        expect(Util.cipher('abc')).toBe('bcd')
+        expect(Util.cipher("abc")).toBe("bcd")
     });
     test('Test prime de 123 => 123', () => {
-        expect(Util.cipher('123')).toBe('123')
+        expect(Util.cipher("123")).toBe("123")
     });
     test('Test prime de 1ab2 => 1bc2', () => {
-        expect(Util.cipher('1ab2')).toBe('1bc2')
+        expect(Util.cipher("1ab2")).toBe("1bc2")
     });
 
 });

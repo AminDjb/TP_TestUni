@@ -52,8 +52,8 @@ Util.sumPrime = function(n) {
     if (n <= 1) {
         throw 'Unable to compute sumPrime for n < 2'
     }
-    for(var i = 1; i < n; i++){
-        if(Util.isPrime = i){
+    for(var i = 2; i <= n; i++){
+        if(Util.isPrime(i) == true){
             somme += i;
         }  
     }
@@ -103,19 +103,19 @@ Util.fizzBuzz = function(n) {
  */
 Util.cipher = function (phrase) {
 
-    let sentence = '';
+    var sentence = "";
 
-    for(var number = 1; number <= phrase.length; number++){
-        if (phrase.charCodeAt(number) <= 65 && phrase.charCodeAt(number) >= 89 || phrase.charCodeAt(number) <= 97 && phrase.charCodeAt(number) >= 121){
+    for(var number = 0; number < phrase.length; number++){
+        if (phrase.charCodeAt(number) >= 65 && phrase.charCodeAt(number) <= 89 || phrase.charCodeAt(number) >= 97 && phrase.charCodeAt(number) <= 121){
             sentence += String.fromCharCode(phrase.charCodeAt(number) + 1);
         }
 
-        else if (phrase.charCodeAt(number) <= 90 || phrase.charCodeAt(number) >= 122){
-            sentence += String.fromCharCode(phrase.charCodeAt(number) + 1);
+        else if (phrase.charCodeAt(number) == 90 || phrase.charCodeAt(number) == 122){
+            sentence += String.fromCharCode(phrase.charCodeAt(number) - 25);
         }
 
         else{
-            sentence = String.fromCharCode(number);
+            sentence += String.fromCharCode(phrase.charCodeAt(number));
         }
     }
 
