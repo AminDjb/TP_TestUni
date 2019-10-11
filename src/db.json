@@ -1,0 +1,46 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "name": "Durandal : Manuel du forgeron",
+      "price": 45,
+      "added_at": "1093-01"
+    },
+    {
+      "id": 2,
+      "name": "Durandal",
+      "price": 45,
+      "added_at": "1093-04-11"
+    },
+    {
+      "id": 3,
+      "name": "Durandal",
+      "price": 35.00,
+      "added_at": "1093-07-01"
+    },
+    {
+      "id": 4,
+      "name": "Durandal",
+      "price": 43.00,
+      "added_at": "1093-11-13"
+    },
+    {
+      "id": 5,
+      "name": "Durandal : Manuel du forgeron",
+      "price": 5.00,
+      "added_at": "1032-04-26"
+    },
+    {
+      "id": 6,
+      "name": "Durandal : Manuel du forgeron",
+      "price": 5.00,
+      "added_at": "1032-04-11"
+    },
+    {
+      "id": 7,
+      "name": "Durandal : Manuel du forgeron",
+      "price": 5.00,
+      "added_at": "1032-04-02"
+    },
+  ]
+}
